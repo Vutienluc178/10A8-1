@@ -1,0 +1,21 @@
+/* App layout */
+#app { min-height: 100vh; }
+#sidebar { width: 270px; background: #f8f9fa; }
+#sidebar .list-group-item.active { background: #0d6efd; color: #fff; }
+.card { border-radius: 1rem; }
+.page { animation: fade .2s ease-in; }
+@keyframes fade { from{opacity:.3; transform:translateY(6px);} to{opacity:1; transform:none;} }
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) { .page { animation: none !important; } }
+
+/* Students list */
+.student-card { border: 1px solid #eaeaea; border-radius: .75rem; padding: .75rem; }
+.student-card h6 { margin: 0 0 .25rem 0; font-weight: 600; }
+.student-card small { color: #6c757d; }
+
+/* Soft badges + card items */
+.badge-soft{ display:inline-block; padding:.25rem .5rem; border-radius:999px; background:#eef2ff; color:#1A237E; font-weight:600; font-size:.8rem; margin-right:.25rem; }
+.item-card{ border:1px solid #eaf0ff; border-radius:.75rem; padding:.75rem; background:#fff; height:100%; }
+.item-card h6{ margin:0 0 .25rem 0; font-weight:600; }
+.item-card .meta{ color:#6c757d; font-size:.85rem; }
